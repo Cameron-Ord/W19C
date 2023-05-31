@@ -1,21 +1,54 @@
 
 def attack_input():
-    
+
     print("ATTACKS:")
-    print("1. Punch")
-    print("2. Kick")
+    try:
+        print("1. PUNCH")
 
-    attack = input("choose an attack")
+        print("2. KICK")
 
-    attack = int(attack)
+        attack = input("CHOOSE ATTACK:")
 
-    if(attack == 1):
-
-        return attack
+        if(attack == "1" or attack == "2"):
+            return (int(attack))
+            
+         
     
-    elif(attack == 2):
+    except ValueError:
+        print("please enter a number")
+        attack_input()
+    except TypeError:
+        print("invalid entry, try again")
+        attack_input()
+    except:
+        print("Something went wrong")
 
-        return attack
 
 
-attack_input()
+
+
+def defense_input():
+
+    try:
+        print("DEFENSE:")
+
+        print("1. HIGH")
+
+        print("2. LOW")
+
+        defense = input("ENTER DEFENSE:")
+
+        if(defense == "1" or defense == "2"):
+          return (int(defense))
+        
+           
+           
+        
+    except TypeError:
+        print("invalid entry, try again")
+        defense_input()
+    except ValueError:
+        print("please enter a number")
+        attack_input()
+    except:
+        print("Something went wrong")
