@@ -94,7 +94,9 @@ def game_loop(p_hp, c_hp):
 
         else:
             #if int value is not within range it will error
+            print()
             print("invalid input, try again")
+            print()
 
         if(c_hp > 0 and p_hp > 0):
             #calls game_loop with current arg values if no one is dead.
@@ -114,10 +116,14 @@ def game_loop(p_hp, c_hp):
             #if there was an error with inputs, calls the game loop function again. 
 
     except TypeError:
+        print()
         print("invalid entry, try again")
+        print()
         game_loop(p_hp, c_hp)
     except ValueError:
+        print()
         print("invalid entry, try again")
+        print()
         game_loop(p_hp, c_hp)
     except:
         print("unknown error")
