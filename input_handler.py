@@ -12,7 +12,7 @@ def attack_input():
         if(attack == "1" or attack == "2"):
             return (int(attack))
             
-          #Exception handler. It does not call the function on failure as any exception inside the app.py will call the gameloop function
+          #Exception handler. It does not call the function on failure as any exception inside the app.py will call the gameloop function.
     
     
     except ValueError:
@@ -44,7 +44,7 @@ def defense_input():
         if(defense == "1" or defense == "2"):
           return (int(defense))
         
-           #Exception handler. It does not call the function on failure as any exception inside the app.py will call the gameloop function
+           #Exception handler. It does not call the function on failure as any exception inside the app.py will call the gameloop function.
 
     except TypeError:
         print("invalid entry, try again")
