@@ -122,8 +122,9 @@ def game_loop(p_hp, c_hp):
         game_loop(p_hp, c_hp)
     except ValueError:
         print()
-        print("invalid entry, try again")
+        print("invalid value entry, try again")
         print()
+
         game_loop(p_hp, c_hp)
     except:
         print("unknown error")
